@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package twitter.follow.rpc;
+
+import "twitter/follow/resources/follow.proto";
+
+message CreateFollowRequest { twitter.follow.resources.Follow follow = 1; }
+
+message DeleteFollowRequest { twitter.follow.resources.Follow follow = 1; }
