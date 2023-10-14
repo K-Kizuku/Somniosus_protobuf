@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package twitter.tweet;
+
+import "google/protobuf/empty.proto";
+import "twitter/tweet/rpc/tweet.proto";
+
+service TweetService {
+  rpc CreateTweet(twitter.tweet.rpc.CreateTweetRequest)
+      returns (google.protobuf.Empty);
+
+  rpc GetTweetTL(twitter.tweet.rpc.GetTweetTLRequest)
+      returns (twitter.tweet.rpc.GetTweetTLResponse);
+
+  rpc DeteleTweet(twitter.tweet.rpc.DeleteTweetRequest)
+      returns (google.protobuf.Empty);
+}
