@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package twitter.account.rpc;
+
+import "google/protobuf/timestamp.proto";
+import "twitter/account/resources/account.proto";
+
+message CreateAccountRequest { string account_id = 1; }
+
+message GetAccountRequest { string account_id = 1; }
+
+message GetAccountResponse { twitter.account.resources.Account account = 1; }
+
+message GetMeRequest { string account_id = 1; }
+
+message GetMeResponse { twitter.account.resources.Account account = 1; }
+
+message UpdateAccountRequest {
+  optional string name = 1;
+  optional string description = 2;
+  optional string image_url = 3;
+  optional google.protobuf.Timestamp birth_day = 5;
+  optional string website_url = 6;
+}

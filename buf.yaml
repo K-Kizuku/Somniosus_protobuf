@@ -1,5 +1,5 @@
 version: v1
-name: buf.build/somniosus
+name: buf.build/somniosus/twitter
 lint:
   use:
     - DEFAULT
