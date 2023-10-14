@@ -8,8 +8,8 @@ fi
 BASE_DIR=$1
 
 # Create base directory
-mkdir -p "proto/$BASE_DIR"
-cd "proto/$BASE_DIR"
+mkdir -p "$BASE_DIR"
+cd "$BASE_DIR"
 
 mkdir resources
 mkdir rpc
