@@ -5,6 +5,8 @@ package twitter.account;
 import "google/protobuf/empty.proto";
 import "twitter/account/rpc/account.proto";
 
+option go_package = "github.com/K-Kizuku/Somiosus_back/proto/twitter/account/account";
+
 service AccountService {
   rpc CreateAccount(twitter.account.rpc.CreateAccountRequest)
       returns (google.protobuf.Empty);

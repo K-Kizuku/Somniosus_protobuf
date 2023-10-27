@@ -4,6 +4,8 @@ package twitter.tweet.rpc;
 
 import "twitter/tweet/resources/tweet.proto";
 
+option go_package = "github.com/K-Kizuku/Somiosus_back/proto/twitter/tweet/rpc/tweet";
+
 message CreateTweetRequest { twitter.tweet.resources.CreateTweet content = 1; }
 
 message CreateTweetResponse { twitter.tweet.resources.Tweet tweet = 1; }

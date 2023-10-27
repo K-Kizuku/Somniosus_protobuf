@@ -5,6 +5,8 @@ package twitter.account.rpc;
 import "google/protobuf/timestamp.proto";
 import "twitter/account/resources/account.proto";
 
+option go_package = "github.com/K-Kizuku/Somiosus_back/proto/twitter/account/rpc/account";
+
 message CreateAccountRequest { string account_id = 1; }
 
 message GetAccountRequest { string account_id = 1; }
@@ -19,6 +21,6 @@ message UpdateAccountRequest {
   optional string name = 1;
   optional string description = 2;
   optional string image_url = 3;
-  optional google.protobuf.Timestamp birth_day = 5;
-  optional string website_url = 6;
+  optional google.protobuf.Timestamp birth_day = 4;
+  optional string website_url = 5;
 }
