@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package twitter.like;
+
+import "google/protobuf/empty.proto";
+import "twitter/like/rpc/like.proto";
+
+service LikeService {
+    rpc CreateLike(twitter.like.rpc.CreateLikeRequest) returns (google.protobuf.Empty);
+
+    rpc DeleteLike(twitter.like.rpc.DeleteLikeRequest) returns (google.protobuf.Empty);
+}
