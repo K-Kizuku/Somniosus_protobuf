@@ -10,6 +10,6 @@ message CreateTweetResponse { twitter.tweet.resources.Tweet tweet = 1; }
 
 message GetTweetTLRequest { string account_id = 1; }
 
-message GetTweetTLResponse { repeated twitter.tweet.resources.Tweet TL = 1; }
+message GetTweetTLResponse { repeated twitter.tweet.resources.Tweet tl = 1; }
 
 message DeleteTweetRequest { string tweet_id = 1; }
