@@ -2,7 +2,9 @@ syntax = "proto3";
 
 package twitter.follow.resources;
 
+option go_package = "github.com/K-Kizuku/Somiosus_back/proto/twitter/follow/resources/follow";
+
 message Follow {
-    string to = 1;
-    string from = 2;
+  string to = 1;
+  string from = 2;
 }
