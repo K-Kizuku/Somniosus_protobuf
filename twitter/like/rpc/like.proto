@@ -4,7 +4,7 @@ package twitter.like.rpc;
 
 import "twitter/like/resources/like.proto";
 
-option go_package = "github.com/K-Kizuku/Somniosus_back/proto.go/twitter/like/rpc/like";
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/like/rpc/like";
 
 message CreateLikeRequest { twitter.like.resources.Like like = 1; }
 
