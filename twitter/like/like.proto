@@ -5,7 +5,7 @@ package twitter.like;
 import "google/protobuf/empty.proto";
 import "twitter/like/rpc/like.proto";
 
-option go_package = "github.com/K-Kizuku/Somiosus_back/proto/twitter/like/like";
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto/twitter/like/like";
 
 service LikeService {
   rpc CreateLike(twitter.like.rpc.CreateLikeRequest)
