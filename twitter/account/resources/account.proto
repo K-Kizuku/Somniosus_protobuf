@@ -6,11 +6,24 @@ import "google/protobuf/timestamp.proto";
 
 option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/account/resources";
 
+enum AccountStatus {
+  ACCOUNT_STATUS_TATUS_UNKNOWN = 0;
+  ACCOUNT_STATUS_GENERAL = 1;
+  ACCOUNT_STATUS_OFFICIAL = 2;
+  ACCOUNT_STATUS_SUBSCRIBER = 3;
+}
+
 message Account {
-  string id = 1;
-  string name = 2;
-  string description = 3;
-  string image_url = 4;
-  google.protobuf.Timestamp birth_day = 5;
-  string website_url = 6;
+  string account_id = 1;
+  string display_id = 2;
+  string name = 3;
+  string description = 4;
+  string website_url = 5;
+  string image_url = 6;
+  string tel_num = 7;
+  google.protobuf.Timestamp birth_day = 8;
+  AccountStatus status = 9;
+  google.protobuf.Timestamp created_at = 10;
+  google.protobuf.Timestamp deleted_at = 11;
+  google.protobuf.Timestamp updated_at = 12;
 };

@@ -7,7 +7,27 @@ import "twitter/account/resources/account.proto";
 
 option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/account/rpc";
 
-message CreateAccountRequest { string account_id = 1; }
+message CreateTempAccountRequest {
+  string name = 1;
+  string tel_num = 2;
+  string birth_day = 3;
+}
+
+message CreateTempAccountResponse { string temp_token = 1; }
+
+message CreateAccountRequest {
+  string account_id = 1;
+  string password = 2;
+  string temp_token = 3;
+}
+
+message VerifyTokenRequest { string jwt = 1; }
+
+message VerifyTokenResponse { string account_id = 1; }
+
+message GenerateTokenRequest { string account_id = 1; }
+
+message GenerateTokenResponse { string token = 1; }
 
 message GetAccountRequest { string account_id = 1; }
 
@@ -18,9 +38,12 @@ message GetMeRequest { string account_id = 1; }
 message GetMeResponse { twitter.account.resources.Account account = 1; }
 
 message UpdateAccountRequest {
-  optional string name = 1;
-  optional string description = 2;
-  optional string image_url = 3;
-  optional google.protobuf.Timestamp birth_day = 4;
-  optional string website_url = 5;
+  string account_id = 1;
+  optional string display_id = 2;
+  optional string name = 3;
+  optional string description = 4;
+  optional string image_url = 5;
+  optional google.protobuf.Timestamp birth_day = 6;
+  optional string website_url = 7;
+  optional string tel_num = 8;
 }
