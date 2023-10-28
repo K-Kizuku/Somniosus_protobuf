@@ -10,7 +10,7 @@ option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/account
 message CreateTempAccountRequest {
   string name = 1;
   string tel_num = 2;
-  string birth_day = 3;
+  google.protobuf.Timestamp birth_day = 3;
 }
 
 message CreateTempAccountResponse { string temp_token = 1; }
