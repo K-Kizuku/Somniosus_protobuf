@@ -5,7 +5,7 @@ package twitter.tweet;
 import "google/protobuf/empty.proto";
 import "twitter/tweet/rpc/tweet.proto";
 
-option go_package = "github.com/K-Kizuku/Somniosus_back/proto/twitter/tweet/tweet";
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.go/twitter/tweet/tweet";
 
 service TweetService {
   rpc CreateTweet(twitter.tweet.rpc.CreateTweetRequest)

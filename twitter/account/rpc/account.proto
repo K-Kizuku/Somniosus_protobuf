@@ -5,7 +5,7 @@ package twitter.account.rpc;
 import "google/protobuf/timestamp.proto";
 import "twitter/account/resources/account.proto";
 
-option go_package = "github.com/K-Kizuku/Somniosus_back/proto/twitter/account/rpc/account";
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.go/twitter/account/rpc/account";
 
 message CreateAccountRequest { string account_id = 1; }
 

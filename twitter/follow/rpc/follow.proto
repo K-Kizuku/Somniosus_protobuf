@@ -4,7 +4,7 @@ package twitter.follow.rpc;
 
 import "twitter/follow/resources/follow.proto";
 
-option go_package = "github.com/K-Kizuku/Somniosus_back/proto/twitter/follow/rpc/follow";
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.go/twitter/follow/rpc/follow";
 
 message CreateFollowRequest { twitter.follow.resources.Follow follow = 1; }
 

@@ -4,7 +4,7 @@ package twitter.account.resources;
 
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/K-Kizuku/Somniosus_back/proto/twitter/account/resources/account";
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.go/twitter/account/resources/account";
 
 message Account {
   string id = 1;
