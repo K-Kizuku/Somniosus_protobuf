@@ -5,7 +5,7 @@ package twitter.follow;
 import "google/protobuf/empty.proto";
 import "twitter/follow/rpc/follow.proto";
 
-option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/follow/follow";
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/follow";
 
 service FollowService {
   rpc CreateFollow(twitter.follow.rpc.CreateFollowRequest)

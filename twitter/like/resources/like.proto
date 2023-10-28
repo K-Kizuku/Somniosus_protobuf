@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package twitter.like.resources;
 
-option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/like/resources/like";
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/like/resources";
 
 message Like {
   string account_id = 1;
