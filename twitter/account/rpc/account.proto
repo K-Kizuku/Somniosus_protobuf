@@ -16,7 +16,7 @@ message CreateTempAccountRequest {
 message CreateTempAccountResponse { string temp_token = 1; }
 
 message CreateAccountRequest {
-  string account_id = 1;
+  string display_id = 1;
   string password = 2;
   string temp_token = 3;
 }
