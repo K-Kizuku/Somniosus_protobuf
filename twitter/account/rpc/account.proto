@@ -27,7 +27,11 @@ message VerifyTokenRequest { string jwt = 1; }
 
 message VerifyTokenResponse { string account_id = 1; }
 
-message GenerateTokenRequest { string account_id = 1; }
+message GenerateTokenRequest {
+  string account_id = 1;
+  string password = 2;
+  twitter.account.resources.AccountStatus status = 3;
+}
 
 message GenerateTokenResponse { string token = 1; }
 
