@@ -12,7 +12,7 @@ service AccountService {
       returns (twitter.account.rpc.CreateTempAccountResponse);
 
   rpc CreateAccount(twitter.account.rpc.CreateAccountRequest)
-      returns (google.protobuf.Empty);
+      returns (twitter.account.rpc.CreateAccountResponse);
 
   rpc VerifyToken(twitter.account.rpc.VerifyTokenRequest)
       returns (twitter.account.rpc.VerifyTokenResponse);

@@ -21,6 +21,8 @@ message CreateAccountRequest {
   string temp_token = 3;
 }
 
+message CreateAccountResponse { string jwt = 1; }
+
 message VerifyTokenRequest { string jwt = 1; }
 
 message VerifyTokenResponse { string account_id = 1; }
