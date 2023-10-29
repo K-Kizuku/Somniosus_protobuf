@@ -4,6 +4,8 @@ package twitter.like.rpc;
 
 import "twitter/like/resources/like.proto";
 
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/like/rpc";
+
 message CreateLikeRequest { twitter.like.resources.Like like = 1; }
 
 message DeleteLikeRequest { twitter.like.resources.Like like = 1; }

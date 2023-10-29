@@ -5,8 +5,12 @@ package twitter.follow;
 import "google/protobuf/empty.proto";
 import "twitter/follow/rpc/follow.proto";
 
-service FollowService {
-    rpc CreateFollow(twitter.follow.rpc.CreateFollowRequest) returns (google.protobuf.Empty);
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/follow";
 
-    rpc DeleteFollow(twitter.follow.rpc.DeleteFollowRequest) returns (google.protobuf.Empty);
+service FollowService {
+  rpc CreateFollow(twitter.follow.rpc.CreateFollowRequest)
+      returns (google.protobuf.Empty);
+
+  rpc DeleteFollow(twitter.follow.rpc.DeleteFollowRequest)
+      returns (google.protobuf.Empty);
 }

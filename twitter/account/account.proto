@@ -5,14 +5,22 @@ package twitter.account;
 import "google/protobuf/empty.proto";
 import "twitter/account/rpc/account.proto";
 
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/account";
+
 service AccountService {
+  rpc CreateTempAccount(twitter.account.rpc.CreateTempAccountRequest)
+      returns (twitter.account.rpc.CreateTempAccountResponse);
+
   rpc CreateAccount(twitter.account.rpc.CreateAccountRequest)
       returns (google.protobuf.Empty);
 
-  rpc GetAccount(twitter.account.rpc.GetAccountRequest)
-      returns (twitter.account.rpc.GetAccountResponse);
+  rpc VerifyToken(twitter.account.rpc.VerifyTokenRequest)
+      returns (twitter.account.rpc.VerifyTokenResponse);
 
-  rpc GetME(twitter.account.rpc.GetMeRequest)
+  rpc GenerateToken(twitter.account.rpc.GenerateTokenRequest)
+      returns (twitter.account.rpc.GenerateTokenResponse);
+
+  rpc GetAccount(twitter.account.rpc.GetAccountRequest)
       returns (twitter.account.rpc.GetAccountResponse);
 
   rpc UpdateAccount(twitter.account.rpc.UpdateAccountRequest)

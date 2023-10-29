@@ -4,6 +4,8 @@ package twitter.tweet.resources;
 
 import "google/protobuf/timestamp.proto";
 
+option go_package = "github.com/K-Kizuku/Somniosus_back/proto.pb/twitter/tweet/resources";
+
 message Tweet {
   string id = 1;
   string content = 2;
